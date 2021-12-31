@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+{
+	float a,b,c,d,e,f,g,h;
+	int n,z;
+	float sub,add,multi,div;
+	printf("hello! what kind of calculation you want to do ?\n");
+	printf("\n1.multiplication\t2.division\t3.additon\t4.substration\n");
+	/*taking the operator to do the calculation*/
+	scanf("%d", &n);
+	/*using switch case operator*/
+    switch(n)
+    /* opening switch case brackets*/
+	{
+		case 1:printf("enter two numbers :");
+		       scanf("%f %f", &a,&b);
+		       multi= a*b;
+		       printf("the multiplication of %.2f and %.2f is %.2f", a,b,multi);
+		       break;
+	    case 2:printf("enter two numbers :");
+	           scanf("%f%f", &c,&d);
+	           div= c/d;
+	           printf("the division of %.2f and %.2f is %.2f", c,d,div);
+	           break;
+	    case 3:printf("enter two numbers :");
+	           scanf("%f%f", &e,&f);
+	           add= e+f;
+	           printf("the additon of %.2f and %.2f is %.2f", e,f,add);
+	           break;
+	    case 4:printf("enter two numbers :");
+	           scanf("%f%f", &g,&h);
+	           sub= g-h;
+	           printf("the substraction of %f and %f is %f", g,h,sub);
+	           break;
+	    default:printf("invalid statement");
+	}
+	/*closing switch case brackets */
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void)
+{
+	int var=1;
+	int *ptr;
+	ptr=&var;
+	printf("\nthe direct access ,variable= %d",var);
+	printf("\nthe indirect access ,variable= %d",*ptr);
+	printf("\nthe address of the variable = %d",&var);
+	printf("\nthe addess of the variable = %d",ptr);
+	*ptr=48;
+	printf("\nthe indirect access of the variable= %d",*ptr);
+}
